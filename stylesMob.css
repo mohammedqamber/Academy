@@ -1,4 +1,9 @@
-
+.whatsapp-logo{
+  width: 60px;
+  position: fixed;
+  left: 82%;
+  top:75%
+}
 @media only screen and (max-width: 768px) {
     
 
