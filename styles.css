@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.nav-left span{
+    color: #100d0d;
+    font-size: 20px;
+}
+.nav-left{
+    display: flex;
+    align-items: center;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    background-color: #fff8f5;
+    padding: 1rem 1rem;
+}
+
+.logo{
+    width: 60px;
+}
+
+.nav-right{
+    display: flex;
+    align-items: center;
+}
+
+.nav-right ul{
+    display: flex;
+}
+
+.hamburger {
+    display: none;
+}
+
+.bar {
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: #151313;
+}
+
+.mobile-nav{
+    
+    background-color: #fff8f5;   
+    flex-direction: column;
+    align-items: center;
+    display: none;
+    
+    animation: dropdown 0.3s;
+    
+}
+
+
+@keyframes dropdown {
+    from{
+        height: 0;
+      
+    }
+    to {
+        height: 381.5px;
+ 
+    }
+}
+
+
+.mobile-nav a{
+    margin: 1.3rem;
+}
+
+.gfg{
+    position: relative;
+}
+.gfg img{
+   
+    height: 600px;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.8;
+}
+.home-text{
+    width: 100%;
+    position: absolute;
+    top: 50px;
+    background-color: #15131352;
+}
+
+.home-text p{
+    color: rgb(237, 235, 234);
+    text-align: center;
+    font-size: 22px;
+    font-weight: 600;
+    margin: 13px 0;
+}
+
+#p1{
+    font-size: 20px;
+}
+
+#p2{
+    font-size: 17px;
+}
+
+.buttons{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 400px;
+    
+    left: 50%;
+    margin-left: -135px;
+}
+
+.btn{
+    padding: 7px 13px;
+    background-color: rgb(201, 133, 39);
+    border: 0.5px solid rgba(3, 5, 4, 0.539);
+    margin: 4px;
+    border-radius: 10px;
+    color: white;
+    
+}
+

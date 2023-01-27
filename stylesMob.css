@@ -1,0 +1,26 @@
+
+@media only screen and (max-width: 768px) {
+    
+
+    .visible{
+        display: flex;    
+    }
+
+    .nav-menu li a {
+       display: none;
+    }
+
+    .nav-menu.active {
+        left: 0;
+    }
+
+    .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: block;
+        cursor: pointer;
+    }
+
+}
