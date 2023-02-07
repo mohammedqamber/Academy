@@ -78,7 +78,7 @@ a {
     background-color: #151313;
 }
 :root{
-    --pwidth: 80%;
+    --pwidth: 70%;
 }
 .mobile-nav{
     width:var(--pwidth);
@@ -89,10 +89,8 @@ a {
     height: 0;
     overflow: hidden;
     position: fixed;
-    top: 12vh ;
-    
-    left: 10%;
-    
+    top: 12vh ; 
+    left: 15%;  
     z-index: 1;
     transition:all 0.35s ease-in-out;
     
