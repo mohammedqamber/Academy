@@ -13,11 +13,17 @@ li {
 
 a {
     text-decoration: none;
+    color: #040202;
+}
+
+.nav-menu li {
+    margin: 0 1.5rem;
 }
 
 .nav-left span{
     color: #100d0d;
     font-size: 20px;
+    margin-left: 10px;
 }
 .nav-left{
     display: flex;
@@ -25,19 +31,33 @@ a {
 }
 
 .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     background-color: #fff8f5;
     padding: 1rem 1rem;
+    z-index: 2;
+    height: 12vh ;    
 }
 
 .logo{
     width: 60px;
 }
 
+#slogan{
+    font-size: 15px;
+    font-style: italic;
+}
+
 .nav-right{
     display: flex;
     align-items: center;
+}
+
+.nav-menu li a:hover{
+   color: rgb(201, 133, 39);
 }
 
 .nav-right ul{
@@ -57,41 +77,42 @@ a {
     transition: all 0.3s ease-in-out;
     background-color: #151313;
 }
-
+:root{
+    --pwidth: 80%;
+}
 .mobile-nav{
-    
-    background-color: #fff8f5;   
+    width:var(--pwidth);
+    background-color: rgb(175, 147, 147);  
+    display: flex;
     flex-direction: column;
     align-items: center;
-    display: none;
+    height: 0;
+    overflow: hidden;
+    position: fixed;
+    top: 12vh ;
     
-    animation: dropdown 0.3s;
+    left: 10%;
+    
+    z-index: 1;
+    transition:all 0.35s ease-in-out;
     
 }
 
-
-@keyframes dropdown {
-    from{
-        height: 0;
-      
-    }
-    to {
-        height: 381.5px;
- 
-    }
+.animation-mob-nav{
+    animation: dropup 1s;
 }
-
 
 .mobile-nav a{
     margin: 1.3rem;
 }
 
 .gfg{
+    margin-top: 12vh;
     position: relative;
 }
 .gfg img{
    
-    height: 620px;
+    height:88vh;
     width: 100%;
     object-fit: cover;
     opacity: 0.8;
@@ -125,7 +146,6 @@ a {
     align-items: center;
     position: absolute;
     top: 400px;
-    
     left: 50%;
     margin-left: -162px;
 }
@@ -137,7 +157,33 @@ a {
     margin: 4px;
     border-radius: 10px;
     color: white;
-    font-size: 17px;
+    font-size:17px;
     
 }
 
+.btn:hover{
+    box-shadow: 2px 2px 2px rgb(201, 133, 39);
+    color: rgb(201, 133, 39);
+    background-color: rgb(220, 217, 212);
+}
+
+/* .whatsapp-logo{
+    width: 60px;
+    position: fixed;
+    left: 92%;
+    top:82%
+  } */
+
+#mission{
+    text-align: center;
+    line-height: 2;
+    font-size: 1rem;
+    padding: 13% 10px;
+}
+
+.whatsapp-logo{
+    width: 60px;
+    position: fixed;
+    right: 10px;   
+    top:75%
+}
