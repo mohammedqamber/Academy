@@ -1,18 +1,18 @@
-.whatsapp-logo{
-  width: 60px;
-  position: fixed;
-  left: 82%;
-  top:84%
-}
 @media only screen and (max-width: 768px) {
-    
 
+
+    
+   /* .paddingclass{
+    margin-top: 0;
+   } */
     .visible{
-        display: flex;    
+            
+        /* visibility: visible; */
+        height: 300px;
     }
 
-    .nav-menu li a {
-       display: none;
+    .nav-right ul{
+        display: none;
     }
 
     .nav-menu.active {
