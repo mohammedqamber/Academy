@@ -2,12 +2,12 @@
 
 * {
     margin: 0;
-    padding: 0;
+    /* padding: 0; */
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
 }
 
-li {
+.nav-menu li {
     list-style: none;
 }
 
@@ -82,7 +82,7 @@ a {
 }
 .mobile-nav{
     width:var(--pwidth);
-    background-color: rgb(235, 229, 229); 
+    background-color: rgb(235, 229, 229);  
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -92,8 +92,7 @@ a {
     top: 12vh ; 
     left: 15%;  
     z-index: 1;
-    transition:all 0.35s ease-in-out;
-    
+    transition:all 0.35s ease-in-out;    
 }
 
 .animation-mob-nav{
@@ -108,8 +107,7 @@ a {
     margin-top: 12vh;
     position: relative;
 }
-.gfg img{
-   
+.gfg img{  
     height:88vh;
     width: 100%;
     object-fit: cover;
@@ -165,17 +163,42 @@ a {
     background-color: rgb(220, 217, 212);
 }
 
+/* .whatsapp-logo{
+    width: 60px;
+    position: fixed;
+    left: 92%;
+    top:82%
+  } */
 
 #mission{
     text-align: center;
     line-height: 2;
     font-size: 1rem;
-    padding: 13% 10px;
+    padding: 0 10px;
+}
+.our-mission{
+    margin: 30px 0 10px 0;
+}
+#features{
+    margin: 25px 0;;
+}
+#features ul li{
+    padding: 10px 5px;
 }
 
 .whatsapp-logo{
     width: 60px;
     position: fixed;
     right: 10px;   
-    top:82%
+    top:75%
 }
+
+.about-us{
+    margin-top: 12vh;
+    padding: 20px 15px;
+}
+
+.about-us p {
+    margin: 10px 0;
+}
+
